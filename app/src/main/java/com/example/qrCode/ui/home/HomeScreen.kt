@@ -12,6 +12,7 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.unit.dp
 import com.example.qrCode.R
+import com.example.qrCode.ui.navigation.Routes
 
 
 @Composable
@@ -32,14 +33,14 @@ fun HomeScreen(navController: NavController) {
             horizontalAlignment = Alignment.CenterHorizontally
         ) {
             Button(
-                onClick = { navController.navigate("scan") },
+                onClick = { navController.navigate(Routes.SCAN) },
                 modifier = Modifier.fillMaxWidth()
             ) {
                 Text(stringResource(R.string.scan))
             }
             Spacer(modifier = Modifier.height(16.dp))
             Button(
-                onClick = { navController.navigate("qrcode") },
+                onClick = { navController.navigate(Routes.QR) },
                 modifier = Modifier.fillMaxWidth()
             ) {
                 Text(stringResource(R.string.qr_code))

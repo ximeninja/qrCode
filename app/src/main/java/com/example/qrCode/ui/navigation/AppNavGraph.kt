@@ -6,6 +6,7 @@ import androidx.navigation.compose.composable
 import androidx.navigation.compose.rememberNavController
 import com.example.qrCode.ui.qrCode.QrCodeScreen
 import com.example.qrCode.ui.home.HomeScreen
+import com.example.qrCode.ui.scan.ScanScreen
 
 @Composable
 fun AppNavGraph() {
@@ -13,14 +14,22 @@ fun AppNavGraph() {
 
     NavHost(
         navController = navController,
-        startDestination = "home"
+        startDestination = Routes.HOME
     ) {
-        composable("home") {
+        composable(Routes.HOME) {
             HomeScreen(navController)
         }
 
-        composable("qrcode") {
+        composable(Routes.QR) {
             QrCodeScreen()
+        }
+
+        composable(Routes.SCAN) {
+            ScanScreen(
+                onCodeScanned = {
+                    navController.popBackStack(Routes.HOME, inclusive = false)
+                }
+            )
         }
     }
 }
