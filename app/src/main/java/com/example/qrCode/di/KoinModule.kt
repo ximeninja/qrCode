@@ -3,7 +3,7 @@ package com.example.qrCode.di
 import com.example.qrCode.data.SeedRepository
 import com.example.qrCode.data.remote.ApiKeyInterceptor
 import com.example.qrCode.data.remote.SeedApiService
-import com.example.qrCode.ui.list.QrCodeViewModel
+import com.example.qrCode.ui.qrCode.QrCodeViewModel
 import okhttp3.Interceptor
 import okhttp3.OkHttpClient
 import org.koin.androidx.viewmodel.dsl.viewModel

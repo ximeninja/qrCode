@@ -1,4 +1,7 @@
 <resources>
     <string name="app_name">QrCode</string>
     <string name="error_message">Failed to load items</string>
+    <string name="qr_code">QR Code</string>
+    <string name="scan">Scan</string>
+    <string name="home">Home</string>
 </resources>
