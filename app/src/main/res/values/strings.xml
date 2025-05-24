@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">QrCode</string>
+    <string name="error_message">Failed to load items</string>
+</resources>
