@@ -14,3 +14,9 @@ The UI is developed in Jetpack Compose.
 Third party libraries were used for the QR code generation and scanning, plus the camera usage.
 
 For the codes: zxing and MLKit. 
+
+The architecture used for this app is MVVM, only using a ViewModel for the QR Code screen with the endpoint.
+There's also a simplified version of clean architecture with all the layers divided in packages, having 
+a UI layer, a Data layer and the Dependency Injection layer, using Koin, since it's a simple project.
+
+There's a navigation graph to handle the navigation.
